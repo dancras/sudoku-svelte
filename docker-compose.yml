@@ -1,0 +1,11 @@
+version: "3"
+volumes:
+  node_modules:
+services:
+  sudoku-svelte-dev:
+    build: .devcontainer
+    container_name: sudoku-svelte-dev
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - .:/app:cached
+      - node_modules:/app/node_modules
