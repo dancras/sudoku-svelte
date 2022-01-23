@@ -7,6 +7,9 @@ const config = {
     "^.+\\.svelte$": ["svelte-jester", { preprocess: true }]
   },
   "moduleFileExtensions": ["svelte", ...defaults.moduleFileExtensions],
+  "moduleNameMapper": {
+    "\\$/(.*)": "<rootDir>/src/$1"
+  },
   "setupFilesAfterEnv": ["./src/setupTests.ts"]
 };
 
