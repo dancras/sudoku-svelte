@@ -4,7 +4,7 @@
 
 <style>
 .Sudoku {
-    max-width: 100vh;
+    max-width: 80vh;
     margin: 0 auto;
 }
 </style>
